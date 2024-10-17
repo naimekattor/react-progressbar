@@ -1,0 +1,35 @@
+ .progressbar {
+  width: 400px;
+  border-radius: 10px;
+  height: 25px;
+  background: bisque;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.progress-per {
+  position: absolute;
+  display: block;
+  height: 100%;
+  background: crimson;
+animation: progress 0.5s ease-in-out forwards;
+opacity: 0;
+}
+.progress-per.html{
+  width: 90%;
+}
+.progress-per.react{
+  width: 70%;
+}
+.progress-per.javascript{
+  width: 75%;
+}
+@keyframes progress{
+  0%{
+    opacity: 1;
+    width: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+} 
